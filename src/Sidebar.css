@@ -1,0 +1,170 @@
+.fa {
+  z-index: 1010;
+  left: 0;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.MSG-Email {
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 1px;
+}
+
+.fixed-Email {
+  position: fixed;
+  bottom: 40px;
+  width: 100%;
+  display: none;
+  animation: opacity 0.4s 1;
+  opacity: 0.9;
+  z-index: 100000000000000000;
+}
+
+.copyLink{
+  position:absolute;
+  margin-top: 10px;
+  left:50%;
+  transform: translate(-50%);
+}
+
+.myOr {
+  position: relative;
+}
+
+#myCopy{
+  background: white;
+}
+
+@media screen and (min-width: 576px) {
+  .myOr::before {
+    content: "";
+    width: 43%;
+    height: 1px;
+    display: block;
+    background: gray;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+
+  .myOr::after {
+    content: "";
+    width: 43%;
+    height: 1px;
+    display: block;
+    background: gray;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+}
+
+#MSG-sent {
+  opacity: 0.9;
+  transition: all 0.4s ease-in-out;
+}
+
+#MSG-Fail {
+  opacity: 0.9;
+  transition: all 0.4s ease-in-out;
+}
+
+.close2 {
+  position: relative;
+  bottom: 30%;
+  transform: translateY(-20%);
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .myInput2{
+    display: block;
+  }
+  .myInp {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 942px) {
+  .fa {
+    display: none;
+  }
+}
+
+.fa-facebook {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(59, 89, 152);
+  cursor:pointer;
+}
+
+.fa-twitter {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(29, 161, 242);
+  cursor:pointer;
+}
+
+.fa-toggle {
+  width: 50px;
+  height: 30px;
+  background-color: gray;
+  cursor:pointer;
+}
+
+.svg {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.fa-share {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(242, 143, 29);
+}
+
+.fa-toggle:hover {
+  width: 200px;
+  height: 30px;
+  transition: all ease-in-out 0.2s;
+  cursor:pointer;
+}
+
+.fa-facebook:hover {
+  width: 70px;
+  height: 50px;
+  transition: all ease-in-out 0.2s;
+  cursor:pointer;
+}
+
+.fa-twitter:hover {
+  width: 70px;
+  height: 50px;
+  transition: all ease-in-out 0.2s;
+  cursor:pointer;
+}
+
+.fa-share:hover {
+  width: 70px;
+  height: 50px;
+  transition: all ease-in-out 0.2s;
+  cursor:pointer;
+}

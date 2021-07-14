@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>Get Softwares</title>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script>
+    function sendemail(versionOf) {
+      var Body = "Software Name: " + versionOf + "<br>Bye";
+      Email.send({
+        SecureToken: "31c101ed-19a9-4ff2-9d94-ba71df93dba2",
+        To: "deeptamresearchfoundation@gmail.com",
+        From: "deeptamresearchfoundation@gmail.com",
+        Subject: "Newer version is available in " + versionOf,
+        Body: Body,
+      }).then((message) => {
+        if (message == "OK") {
+          successMsg();
+        } else {
+          errorMsg();
+          console.error(message);
+        }
+        finish();
+      });
+    }
+
+    function errorMsg() {
+      var msgErr = document.getElementById("modal-header");
+      msgErr.style.background = "#dd3b3b";
+      msgerrr = document.getElementById("message_sent_msg").innerText =
+        "Error While Sending Request";
+      $("#myModal").modal();
+    }
+
+    function successMsg() {
+      var msgSucc = document.getElementById("modal-header");
+      msgSucc.style.background = "#5cb85c";
+      msgSuccc = document.getElementById("message_sent_msg").innerText =
+        "Thankyou for telling us";
+      $("#myModal").modal();
+    }
+
+    function finish() {
+      $("#form")[0].reset();
+    }
+
+    function sharesend() {
+      var emailinput = $("#EmailInp").val()
+      var Body = "Software Name: " + emailinput + "<br>Bye";
+      Email.send({
+        SecureToken: "31c101ed-19a9-4ff2-9d94-ba71df93dba2",
+        To: "deeptamresearchfoundation@gmail.com",
+        From: emailinput,
+        Subject: "Newer version is available in ",
+        Body: Body,
+      }).then((message) => {
+        if (message == "OK") {
+          $("#emailForm")[0].reset();
+          document.getElementById("MSG-sent").style.opacity = "1"
+          document.getElementById("MSG-sent").style.display = "inline"
+          document.getElementById("MSG-sent").style.opacity = "0.9"
+          document.getElementById("MSG-Fail").style.display = "none"
+          $('#myModal2').modal('hide')
+          setTimeout(() => document.getElementById("MSG-sent").style.opacity = "0", 3000)
+        } else {
+          document.getElementById("MSG-Fail").style.opacity = "1"
+          document.getElementById("MSG-Fail").style.display = "inline"
+          document.getElementById("MSG-Fail").style.opacity = "0.9"
+          document.getElementById("MSG-sent").style.display = "none"
+          console.error(message);
+        }
+        finish();
+      });
+    }
+
+    function myCopy() {
+      var copyText = document.getElementById("myCopy");
+      copyText.select();
+      copyText.setSelectionRange(0, 9999999999)
+      document.execCommand("copy");
+      window.getSelection().removeAllRanges()
+      // alert("Copied the text: " + copyText.value);
+    }
+  </script>
+</body>
+
+</html>

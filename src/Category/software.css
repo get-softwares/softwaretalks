@@ -1,0 +1,159 @@
+.cat .list-group,
+.hello {
+  /* max-height: 700px; */
+  /* overflow-y: auto; */
+  /* overflow-x: hidden; */
+  margin-bottom: 20px;
+  margin: 20px;
+}
+
+.no_ls {
+  list-style-type: none;
+}
+
+.header {
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1010;
+  color: white;
+}
+
+::selection {
+  background-color: #3776ab;
+  color: white;
+  text-shadow: none;
+}
+
+.folder-group img {
+  width: 100px;
+}
+
+.folder-group li {
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  max-width: 140px;
+}
+.folder-group .row {
+  justify-content: center;
+}
+
+@media screen and (max-width:410px){
+  .folder-group img {
+    width: 80px;
+  }
+  
+  .folder-group li {
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+    max-width: 120px;
+  }
+  
+  .card-body{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width:312px){
+  .folder-group img {
+    width: 140px;
+  }
+  
+  .folder-group li {
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+    max-width: 180px;
+  }
+  
+  .card-body{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width:250px){
+  .folder-group img {
+    width: 80px;
+  }
+  
+  .folder-group li {
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+    max-width: 120px;
+  }
+  
+  .card-body{
+    padding: 0;
+  }
+}
+
+*{
+  scroll-behavior: smooth;
+}
+
+nav {
+  box-shadow: 0.01px 0.01px 5px black;
+}
+
+footer li a {
+  color: white;
+}
+
+footer li a:hover {
+  color: grey;
+}
+
+.noResultFound img {
+  width: 300px;
+  display: block;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 475px) {
+  .noResultFound img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 287px) {
+  .noResultFound img {
+    width: 184px;
+  }
+}
+
+@media screen and (max-width: 235px) {
+  .noResultFound img {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 199px) {
+  .noResultFound img {
+    width: 120px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  a.nav_active {
+    border-bottom: 2px lightskyblue solid;
+    padding-bottom: 1px;
+    font-weight: 500;
+    color: white;
+    transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+  }
+}
+*{
+  transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+}
