@@ -1,6 +1,6 @@
 import React from "react";
 import Btobtn from './Btobtn'
-import { Route, Switch, HashRouter } from "react-router-dom";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Softwaress from "./Softwares";
 import Home from "./Home";
 import './index.css'
@@ -37,7 +37,7 @@ const App = () => {
   }, []);
 
   return (
-    <HashRouter forceRefresh={shouldRefresh}>
+    <BrowserRouter forceRefresh={shouldRefresh}>
       <Btobtn/>
       <Nav />
       <ScrollToTop />
@@ -69,7 +69,7 @@ const App = () => {
         <Softwares />
       </Switch>
       <Footer />
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
