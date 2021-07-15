@@ -7,7 +7,7 @@ function AlertShow() {
   if (AlertShows === "Yes") {
     return (
     <div className="alert alert-danger alert-dismissible fade show" role="alert">
-      <strong>Website!</strong> You should enter at least 1 character with no <strong>#</strong>, <strong></strong> and <strong>/</strong>.
+      <strong>Website!</strong> You should enter at least 1 character with no <strong>#</strong>, <strong>%</strong> and <strong>/</strong>.
       <button type="button" className="close" data-dismiss="alert" aria-label="Close" style={{ outline: "none", border: "none" }}>
         <span aria-hidden="true">&times;</span>
       </button>
