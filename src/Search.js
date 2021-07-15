@@ -7,6 +7,7 @@ import Sidebar from './SideBar'
 import { useParams } from "react-router";
 
 function Homeshow() {
+  
   const {search} = useParams()
   let getSearch;
   let flags;
