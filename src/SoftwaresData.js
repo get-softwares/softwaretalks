@@ -128,7 +128,7 @@ let Data = [
 		Apps: "Apps",
 		desc: "AVG Secure Browser is the secure browser developed by AVG for more security in browsing the internet.",
 		olderversions: Nootherversion(),
-		filename: "avast_secure_browser_setup for Windows, AVG-Browser-Mobile for Andorid",
+		filename: "avg_secure_browser_setup for Windows, AVG-Browser-Mobile for Andorid",
 		setupsize: "3MB for Windows, 62MB for Android",
 		Free: "Free",
 		dev: "AVG",
