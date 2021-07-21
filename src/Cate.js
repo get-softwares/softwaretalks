@@ -6,7 +6,7 @@ import Categories from './CategoryData';
 
 function Cate() {
     let mylocate = useLocation()
-    let cates = () => {
+    function cates(){
         for (let index = 0; index < Data.length; index++) {
             if (Categories[index].To === mylocate.pathname) {
                 return Categories[index].Next

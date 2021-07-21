@@ -40,7 +40,7 @@ const App = () => {
         <Route exact path="/search/" component={Search} />
         <Route exact path="/search/:search" component={Search} />
         {/* categories List starts */}
-        <Route exact path="/categories/:cate" component={Cate}></Route>
+        <Route exact path="/categories/:cates" component={Cate}></Route>
         {/* categories List ends */}
         <Softwares />
       </Switch>
