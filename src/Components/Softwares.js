@@ -1,7 +1,9 @@
+import React from "react";
 import { Link } from "react-router-dom";
-import Categories from './CategoryData'
+import Data from '../Data/SoftwaresData'
 
 function ncard(val) {
+  if (val.Windows === "Windows") {
   return (
     <li>
       <Link to={val.To} className="list-group-item list-group-item-action">
@@ -11,9 +13,10 @@ function ncard(val) {
       </Link>
     </li>
   );
+  }
 }
 
-function Category() {
+function Softwaress() {
   return (
     <>
       <div>
@@ -21,11 +24,11 @@ function Category() {
           <div className="mb-5">
             <div className="list-group mt-3">
               <button className="btn btn-success d-block p-2">
-                Categories
+                Windows Softwares
               </button>
               <div className="card card-body">
                 <div className="list-group folder-group">
-                  <div className="row no_ls">{Categories.map(ncard)}</div>
+                  <div className="row no_ls">{Data.map(ncard)}</div>
                 </div>
               </div>
             </div>
@@ -36,4 +39,4 @@ function Category() {
   );
 }
 
-export default Category;
+export default Softwaress;

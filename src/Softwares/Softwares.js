@@ -1,7 +1,7 @@
 import React from "react";
-import Data from "../SoftwaresData";
+import Data from "../Data/SoftwaresData";
 import { Route, Switch } from "react-router-dom";
-import FourHundFour from "../FourHundFour";
+import FourHundFour from "../Components/FourHundFour";
 import { Helmet } from 'react-helmet'
 
 function ncard(val) {

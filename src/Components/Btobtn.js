@@ -1,4 +1,4 @@
-import "./my.css"
+import "../css/my.css"
 
 function backToTop() {
     window.scrollTo(0, 0);

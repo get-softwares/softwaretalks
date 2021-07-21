@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Data from "./SoftwaresData";
+import Data from "../Data/SoftwaresData";
 
 function ncard(val) {
   if (val.Apps === "Apps") {

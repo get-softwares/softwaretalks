@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Data from "./SoftwaresData";
+import Data from "../Data/SoftwaresData";
 import Home from './Home'
 import { Helmet } from 'react-helmet'
 import Sidebar from './SideBar'

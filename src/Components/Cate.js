@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import Data from './SoftwaresData';
+import Data from '../Data/SoftwaresData';
 import { Helmet } from 'react-helmet';
-import Categories from './CategoryData';
+import Categories from '../Data/CategoryData';
 
 function Cate() {
     let mylocate = useLocation()

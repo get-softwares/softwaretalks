@@ -1,20 +1,20 @@
 import React from "react";
-import Btobtn from './Btobtn'
+import Btobtn from './Components/Btobtn'
 import { Route, Switch, BrowserRouter } from "react-router-dom";
-import Softwaress from "./Softwares";
-import Home from "./Home";
-import './index.css'
-import Category from "./Category";
-import Application from "./Apps";
-import Search from "./Search";
-import "./software.css";
-import ScrollToTop from "./ScrollToTop";
-import Nav from "./Nav";
-import Footer from "./Footer";
+import Softwaress from "./Components/Softwares";
+import Home from "./Components/Home";
+import './css/index.css'
+import Category from "./Components/Category";
+import Application from "./Components/Apps";
+import Search from "./Components/Search";
+import "./css/software.css";
+import ScrollToTop from "./Components/ScrollToTop";
+import Nav from "./Components/Nav";
+import Footer from "./Components/Footer";
 import Softwares from "./Softwares/Softwares";
 import { Helmet } from 'react-helmet'
-import Sidebar from './SideBar'
-import Cate from "./Cate";
+import Sidebar from './Components/SideBar'
+import Cate from "./Components/Cate";
 
 const App = () => {
   const [shouldRefresh, setShouldRefresh] = React.useState(false);
