@@ -14,7 +14,6 @@ import Footer from "./Components/Footer";
 import Softwares from "./Softwares/Softwares";
 import { Helmet } from 'react-helmet'
 import Sidebar from './Components/SideBar'
-import Cate from "./Components/Cate";
 
 const App = () => {
   const [shouldRefresh, setShouldRefresh] = React.useState(false);
@@ -36,13 +35,8 @@ const App = () => {
         <Route exact path="/windows-softwares/"><Helmet><title>Windows Softwares - Get Softwares</title><meta name="description" content="Discover and Download best, FREE Software and Apps" /></Helmet><Softwaress /></Route>
         <Route exact path="/categories"><Category /><Helmet><title>Categories - Get Softwares</title><meta name="description" content="Get Many softwares by its categories" /></Helmet></Route>
         <Route exact path="/apps"><Application /><Helmet><title>Applications - Get Softwares</title><meta name="description" content="Android apps and games download, download android apps and games for free." /></Helmet></Route>
-        {/* <Route exact path="/search"><Search /></Route> */}
         <Route exact path="/search/" component={Search} />
         <Route exact path="/search/:search" component={Search} />
-        {/* categories List starts */}
-        <Route exact path="/categories/:cates" component={Cate}></Route>
-        {/* <Route exact path="/categories/sitemap.xml"></Route> */}
-        {/* categories List ends */}
         <Softwares />
       </Switch>
       <Footer />

@@ -1,13 +1,14 @@
 import React from "react";
 import Data from "../Data/SoftwaresData";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Link, useLocation } from "react-router-dom";
 import FourHundFour from "../Components/FourHundFour";
 import { Helmet } from 'react-helmet'
+import Categories from "../Data/CategoryData";
 
 function ncard(val) {
   let SendEmail;
   let hello = ""
-  SendEmail = "javas"+hello+"cript:sendemail('" + val.Name + "')"
+  SendEmail = "javas" + hello + "cript:sendemail('" + val.Name + "')"
   return (
     <Route exact path={val.To}>
       <>
@@ -40,7 +41,7 @@ function ncard(val) {
                 id="message_sent"
                 style={{ padding: "40px 50px" }}
               >
-                <h5 id="message_sent_msg"><p style={{display:"none"}}>asd</p></h5>  
+                <h5 id="message_sent_msg"><p style={{ display: "none" }}>asd</p></h5>
               </div>
               <div className="modal-footer">
                 <button
@@ -130,10 +131,53 @@ function ncard(val) {
 }
 
 function Softwares() {
+  let mylocate = useLocation()
+  function nccard(val) {
+    if (val.Categories === mylocate.pathname.slice(12)) {
+      return (
+        <li>
+          <Link to={val.To} className="list-group-item list-group-item-action">
+            <img src={val.img} alt={val.Name} />
+            <br />
+            {val.Name}
+          </Link>
+        </li>
+      );
+    }
+  }
+
+  function cate(val) {
+    return (
+      <Route exact path={val.To}>
+        <Helmet>
+          <title>{val.Name} - Get Softwares</title>
+        </Helmet>
+        <div>
+          <div>
+            <div className="cat">
+              <div className="mb-5">
+                <div className="list-group mt-3">
+                  <button className="btn btn-success d-block p-2">{val.Name}</button>
+                  <div className="card card-body">
+                    <div className="list-group folder-group">
+                      <div className="row no_ls">
+                        {Data.map(nccard)}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div >
+      </Route>
+    )
+  }
   return (
     <>
       <Switch>
         {Data.map(ncard)}
+        {Categories.map(cate)}
         <>
           <Helmet><title>404 Page Not Found</title></Helmet>
           <Route component={FourHundFour}></Route>

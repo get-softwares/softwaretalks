@@ -3,61 +3,61 @@ const Categories = [
     Name: "Antivirus",
     img: "/media/images/category/antivirus.png",
     To: "/categories/antivirus",
-    Next: "Antivirus"
+    Next: "antivirus"
   },
   {
     Name: "Browser",
     img: "/media/images/category/browser.png",
     To: "/categories/browser",
-    Next:"Browser"
+    Next:"browser"
   },
   {
     Name: "Download Manager",
     img: "/media/images/category/d-manager.png",
     To: "/categories/download-manager",
-    Next:"Download Manager"
+    Next:"download-manager"
   },
   {
     Name: "Emulators",
     img: "/media/images/category/emulators.png",
     To: "/categories/emulators",
-    Next:"Emulators"
+    Next:"emulators"
   },
   {
     Name: "IDE",
     img: "/media/images/category/ide.png",
     To: "/categories/ide",
-    Next:"IDE"
+    Next:"ide"
   },
   {
     Name: "Media Player",
     img: "/media/images/category/m-player.png",
     To: "/categories/media-player",
-    Next:"Media Player"
+    Next:"media-player"
   },
   {
     Name: "Office Softwares",
     img: "/media/images/category/office.png",
     To: "/categories/office-softwares",
-    Next:"Office Softwares"
+    Next:"office-softwares"
   },
   {
     Name: "PDF Reader",
     img: "/media/images/category/pdf.jpg",
     To: "/categories/pdf-reader",
-    Next:"PDF Reader"
+    Next:"pdf-reader"
   },
   {
     Name: "Photo Editor",
     img: "/media/images/category/p-editor.png",
     To: "/categories/photo-editor",
-    Next:"Photo Editor"
+    Next:"photo-editor"
   },
   {
     Name: "Programming",
     img: "/media/images/category/programming.png",
     To: "/categories/programming",
-    Next:"Programming"
+    Next:"programming"
   },
   // {
   //   Name: "Screen Recording",
