@@ -41,7 +41,7 @@ const App = () => {
         <Route exact path="/search/:search" component={Search} />
         {/* categories List starts */}
         <Route exact path="/categories/:cates" component={Cate}></Route>
-        <Route exact path="/categories/sitemap.xml"></Route>
+        {/* <Route exact path="/categories/sitemap.xml"></Route> */}
         {/* categories List ends */}
         <Softwares />
       </Switch>
