@@ -12,7 +12,7 @@ function Footer() {
           <div className="row">
             <div className="col-md-4 mx-auto">
               <h5 className="font-weight-bold text-uppercase mt-3 mb-4">
-                Footer Content
+                SoftwareTalk
               </h5>
               <p>
                 Here you can find the softwares. Get most of the Windows
@@ -46,16 +46,16 @@ function Footer() {
               </h5>
               <ul className="list-unstyled">
                 <li>
-                  <Link style={{transition:'0s'}} to="/link1">Link 1</Link>
+                  <Link style={{transition:'0s'}} to="/categories/antivirus">Antivirus</Link>
                 </li>
                 <li>
-                  <Link style={{transition:'0s'}} to="/link2">Link 2</Link>
+                  <Link style={{transition:'0s'}} to="/categories/browser">Browser</Link>
                 </li>
                 <li>
-                  <Link style={{transition:'0s'}} to="/link3">Link 3</Link>
+                  <Link style={{transition:'0s'}} to="/categories/emulators">Emulators</Link>
                 </li>
                 <li>
-                  <Link style={{transition:'0s'}} to="/link4">Link 4</Link>
+                  <Link style={{transition:'0s'}} to="/categories">And MOre..</Link>
                 </li>
               </ul>
             </div>
