@@ -14,7 +14,7 @@ function ncard(val) {
       <>
         <Helmet>
           <title>{val.Name} - SoftwareTalk</title>
-          <meta name="description" content={val.desc} />
+          <meta name="description" content={val.desc + "SoftwareTalk"} />
         </Helmet>
         <div className="modal fade" id="myModal" role="dialog">
           <div className="modal-dialog">
