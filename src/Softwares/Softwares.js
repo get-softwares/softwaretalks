@@ -13,7 +13,7 @@ function ncard(val) {
     <Route exact path={val.To}>
       <>
         <Helmet>
-          <title>{val.Name} - Get Softwares</title>
+          <title>{val.Name} - SoftwareTalk</title>
           <meta name="description" content={val.desc} />
         </Helmet>
         <div className="modal fade" id="myModal" role="dialog">
@@ -150,7 +150,7 @@ function Softwares() {
     return (
       <Route exact path={val.To}>
         <Helmet>
-          <title>{val.Name} - Get Softwares</title>
+          <title>{val.Name} - SoftwareTalk</title>
         </Helmet>
         <div>
           <div>

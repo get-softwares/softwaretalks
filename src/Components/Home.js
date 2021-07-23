@@ -21,7 +21,7 @@ function Home(props) {
   return (
     <>
     <Router></Router>
-    <Helmet><title>Get Softwares - Home</title></Helmet>
+    <Helmet><title>SoftwareTalk - Home</title></Helmet>
       {AlertShow()}
       <div className="container-fluid">
         <div className="row align-items-center">
