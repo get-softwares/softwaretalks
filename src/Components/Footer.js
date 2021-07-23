@@ -11,7 +11,7 @@ function Footer() {
         <div className="container text-center text-md-left" style={{paddingBottom:'20px'}}>
           <div className="row">
             <div className="col-md-4 mx-auto">
-              <h5 className="font-weight-bold text-uppercase mt-3 mb-4">
+              <h5 className="font-weight-bold mt-3 mb-4">
                 SoftwareTalk
               </h5>
               <p>
@@ -55,7 +55,7 @@ function Footer() {
                   <Link style={{transition:'0s'}} to="/categories/emulators">Emulators</Link>
                 </li>
                 <li>
-                  <Link style={{transition:'0s'}} to="/categories">And MOre..</Link>
+                  <Link style={{transition:'0s'}} to="/categories">And More..</Link>
                 </li>
               </ul>
             </div>
