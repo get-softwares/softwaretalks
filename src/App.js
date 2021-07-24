@@ -32,9 +32,9 @@ const App = () => {
       <ScrollToTop />
       <Switch>
         <Route exact path="/"><Sidebar/><Home /></Route>
-        <Route exact path="/windows-softwares/"><Helmet><title>Windows Softwares - SoftwareMass</title><meta name="description" content="Discover and Download best, FREE Software and Apps - SoftwareMass" /></Helmet><Softwaress /></Route>
-        <Route exact path="/categories"><Category /><Helmet><title>Categories - SoftwareMass</title><meta name="description" content="Get Many softwares by its categories - SoftwareMass" /></Helmet></Route>
-        <Route exact path="/apps"><Application /><Helmet><title>Applications - SoftwareMass</title><meta name="description" content="Android apps and games download, download android apps and games for free - SoftwareMass" /></Helmet></Route>
+        <Route exact path="/windows-softwares/"><Helmet><title>Windows Softwares - SoftwareMess</title><meta name="description" content="Discover and Download best, FREE Software and Apps - SoftwareMess" /></Helmet><Softwaress /></Route>
+        <Route exact path="/categories"><Category /><Helmet><title>Categories - SoftwareMess</title><meta name="description" content="Get Many softwares by its categories - SoftwareMess" /></Helmet></Route>
+        <Route exact path="/apps"><Application /><Helmet><title>Applications - SoftwareMess</title><meta name="description" content="Android apps and games download, download android apps and games for free - SoftwareMess" /></Helmet></Route>
         <Route exact path="/search/" component={Search} />
         <Route exact path="/search/:search" component={Search} />
         <Softwares />

@@ -30,7 +30,7 @@ function Nav() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <Link className="navbar-brand" style={{fontSize:'20px', fontWeight:'revert'}} to="/">
-          SoftwareMass
+          SoftwareMess
         </Link>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
