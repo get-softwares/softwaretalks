@@ -12,7 +12,7 @@ function Footer() {
           <div className="row">
             <div className="col-md-4 mx-auto">
               <h5 className="font-weight-bold mt-3 mb-4">
-                SoftwareTalk
+                SoftwareMass
               </h5>
               <p>
                 Here you can find the softwares. Get most of the Windows

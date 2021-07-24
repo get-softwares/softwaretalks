@@ -21,7 +21,7 @@ function Home(props) {
   return (
     <>
     <Router></Router>
-    <Helmet><title>SoftwareTalk - Home</title></Helmet>
+    <Helmet><title>SoftwareMass - Home</title></Helmet>
       {AlertShow()}
       <div className="container-fluid">
         <div className="row align-items-center">
@@ -33,7 +33,7 @@ function Home(props) {
             />
           </div>
           <div className="text-center col-lg-6 col-md-6 container-fluid">
-            <h1 style={{ fontSize: "26px" }}>SoftwareTalk</h1>
+            <h1 style={{ fontSize: "26px" }}>SoftwareMass</h1>
             <p>
               <b>Get Softwares Here by just Clicking on Get Softwares</b>
             </p>
