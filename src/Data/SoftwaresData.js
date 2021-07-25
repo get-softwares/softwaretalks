@@ -2319,7 +2319,26 @@ let Data = [
 		sysarch: '×32 ×64',
 		Download: <div><span className="mb-3"><Downloadbtn className="mb-3" to="https://download.apowersoft.info/beecut-setup.exe" color="btn btn-primary" Version="Windows" /></span></div>
 	},
-	// https://financesonline.com/20-best-video-editing-software/
+	{
+		Name: "Davinci Resolve",
+		img: "/media/images/100x100/video-editor/dr.jpg",
+		To: "/categories/video-editor/davinci-resolve",
+		Categories: "video-editor",
+		Windows: "Windows",
+		Apps: "",
+		desc:"DaVinci Resolve is the world’s only solution that combines editing, color correction, visual effects, motion graphics and audio post production all in one software tool! Its elegant, modern interface is fast to learn and easy enough for new users, yet powerful for professionals.",
+		olderversions: Nootherversion(),
+		filename: " davinci-resoleve.exe",
+		setupsize: "??",
+		Free: "Free Register",
+		dev: "BlackMagicDesign",
+		devhref: "https://www.blackmagicdesign.com/products/davinciresolve/",
+		sysos: "7, 8.1, 10",
+		sysram: "16GB",
+		type: "Online Installer",
+		sysarch: '×64',
+		Download: <div><span className="mb-3"><Downloadbtn className="mb-3" to="https://www.blackmagicdesign.com/products/davinciresolve/" color="btn btn-primary" Version="Windows" /></span></div>
+	},
 ];
 
 export default Data;
