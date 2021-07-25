@@ -129,6 +129,13 @@
   cursor:pointer;
 }
 
+.fa-youtube {
+  width: 50px;
+  height: 50px;
+  background-color: #FF0000;
+  cursor:pointer;
+}
+
 .svg {
   position: relative;
   left: 50%;
@@ -149,6 +156,13 @@
 }
 
 .fa-facebook:hover {
+  width: 70px;
+  height: 50px;
+  transition: all ease-in-out 0.2s;
+  cursor:pointer;
+}
+
+.fa-youtube:hover {
   width: 70px;
   height: 50px;
   transition: all ease-in-out 0.2s;

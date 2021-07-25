@@ -14,17 +14,19 @@ function hideFail() {
 
 function sideno() {
     let my_collapse = document.getElementById("collapse");
-    if (document.getElementById('fa1') != null && document.getElementById('fa2') != null && document.getElementById('fa3') != null) {
-        if (document.getElementById('fa1').style.visibility === "hidden" && document.getElementById('fa2').style.visibility === "hidden" && document.getElementById('fa3').style.visibility === "hidden") {
+    if (document.getElementById('fa1') != null && document.getElementById('fa2') != null && document.getElementById('fa3') != null && document.getElementById('fa4') != null) {
+        if (document.getElementById('fa1').style.visibility === "hidden" && document.getElementById('fa2').style.visibility === "hidden" && document.getElementById('fa3').style.visibility === "hidden" && document.getElementById('fa4').style.visibility === "hidden") {
             document.getElementById('fa1').style.visibility = 'visible';
             document.getElementById('fa2').style.visibility = 'visible';
             document.getElementById('fa3').style.visibility = 'visible';
+            document.getElementById('fa4').style.visibility = 'visible';
             my_collapse.style.left = "0px";
         }
         else {
             document.getElementById('fa1').style.visibility = 'hidden';
             document.getElementById('fa2').style.visibility = 'hidden';
             document.getElementById('fa3').style.visibility = 'hidden';
+            document.getElementById('fa4').style.visibility = 'hidden';
             my_collapse.style.left = "-49px"
         }
     }
@@ -49,6 +51,11 @@ function Sidebar() {
                 <div title="Share To Twitter" id="fa2" onClick={() => window.open('https://twitter.com/', '_blank', 'width=800,height=650')}>
                     <div className="fa-twitter">
                         <img className="svg" style={{ position: 'relative', top: '50%' }} height="40px" width="40px" src="/media/images/twitter.svg" alt="." />
+                    </div>
+                </div>
+                <div title="Our Youtube Channel" id="fa4" onClick={() => window.open('https://www.youtube.com/channel/UCzaofCAJnpb-QWojVnv_9WA')}>
+                    <div className="fa-youtube">
+                        <img className="svg" style={{ position: 'relative', top: '50%' }} height="40px" width="40px" src="/media/images/youtube.svg" alt="." />
                     </div>
                 </div>
                 <div title="Share" id="fa3" data-toggle="modal" data-target="#myModal2">
