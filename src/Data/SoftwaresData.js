@@ -1506,7 +1506,7 @@ let Data = [
 		Categories: "photo-editor",
 		Windows: "Windows",
 		Apps: "",
-		desc: "Luminar AI is the first photo editing software based on artificial intelligence. It is thanks to AI tools, which do all the work for you, a great choice for beginners.",
+		desc: "Luminar AI is the first photo editing software based on artificial intelligence. It is thanks to AI tools, which do all the work for you.",
 		olderversions: Nootherversion(),
 		filename: "LuminarAISetup",
 		setupsize: "15MB",
@@ -2297,16 +2297,16 @@ let Data = [
 		sysram: "4GB",
 		type: "Online Installer",
 		sysarch: '×64',
-		Download: <div><span className="mb-3"><Downloadbtn className="mb-3" to="https://download.wondershare.com/filmora_full846.exe" color="btn btn-primary" Version="Windows" /></span></div>
+		Download: <div><span className="mb-3"><Downloadbtn className="mb-3" to="https://download.wondershare.com/filmora_full846.exe" color="btn btn-primary" Version="Windows &times;64" /></span></div>
 	},
 	{
 		Name: "Beecut",
-		img: "/media/images/100x100/video-editor/filmora.jpg",
+		img: "/media/images/100x100/video-editor/beecut.jpg",
 		To: "/categories/video-editor/beecut",
 		Categories: "video-editor",
 		Windows: "Windows",
 		Apps: "",
-		desc:"Filmora gives you a helping hand to get started with any new movie project by importing and editing your video, adding special effects and transitions, and sharing your final production on social media, mobile devices, or DVDs.",
+		desc:"With BeeCut, you can not only trim, cut and re-order videos but create picture-in-picture video, cut out video, convert speech to text and more.",
 		olderversions: Nootherversion(),
 		filename: " beecut-setup.exe",
 		setupsize: "2MB",
