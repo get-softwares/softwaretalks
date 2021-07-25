@@ -77,12 +77,12 @@ const Categories = [
   //   To: "/categories/video-cutter",
   // Next:""
   // },
-  // {
-  //   Name: "Video Editors",
-  //   img: "/media/images/category/v-editor.png",
-  //   To: "/categories/video-editor",
-  // Next:""
-  // },
+  {
+    Name: "Video Editors",
+    img: "/media/images/category/v-editor.png",
+    To: "/categories/video-editor",
+    Next: "video-editor"
+  },
   // {
   //   Name: "Zip Extracter",
   //   img: "/media/images/category/z-extract.jpg",
