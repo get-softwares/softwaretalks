@@ -2341,4 +2341,16 @@ let Data = [
 	},
 ];
 
+Data.sort((a, b) => {
+    let fa = a.Name.toLowerCase(),
+        fb = b.Name.toLowerCase();
+    if (fa < fb) {
+        return -1;
+    }
+    if (fa > fb) {
+        return 1;
+    }
+    return 0;
+});
+
 export default Data;
