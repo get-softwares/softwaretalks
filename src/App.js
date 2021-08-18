@@ -1,18 +1,14 @@
 import React from "react";
 import Btobtn from './Components/Btobtn'
 import { Route, Switch, BrowserRouter } from "react-router-dom";
-import Softwaress from "./Components/Softwares";
 import Home from "./Components/Home";
 import './css/index.css'
-import Category from "./Components/Category";
-import Application from "./Components/Apps";
 import Search from "./Components/Search";
 import "./css/software.css";
 import ScrollToTop from "./Components/ScrollToTop";
 import Nav from "./Components/Nav";
 import Footer from "./Components/Footer";
 import Softwares from "./Softwares/Softwares";
-import { Helmet } from 'react-helmet'
 import Sidebar from './Components/SideBar'
 
 const App = () => {
@@ -32,9 +28,6 @@ const App = () => {
       <ScrollToTop />
       <Switch>
         <Route exact path="/"><Sidebar/><Home /></Route>
-        <Route exact path="/windows-softwares/"><Helmet><title>Windows Softwares - SoftwareMess</title><meta name="description" content="Discover and Download best, FREE Software and Apps - SoftwareMess" /></Helmet><Softwaress /></Route>
-        <Route exact path="/categories"><Category /><Helmet><title>Categories - SoftwareMess</title><meta name="description" content="Get Many softwares by its categories - SoftwareMess" /></Helmet></Route>
-        <Route exact path="/apps"><Application /><Helmet><title>Applications - SoftwareMess</title><meta name="description" content="Android apps and games download, download android apps and games for free - SoftwareMess" /></Helmet></Route>
         <Route exact path="/search/" component={Search} />
         <Route exact path="/search/:search" component={Search} />
         <Softwares />

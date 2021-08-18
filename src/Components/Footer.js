@@ -45,7 +45,7 @@ function Footer() {
                   <Link style={{ transition: '0s' }} to="/apps">Apps</Link>
                 </li>
                 <li>
-                  <Link style={{ transition: '0s' }} to="/Categories">Categories</Link>
+                  <Link style={{ transition: '0s' }} to="/categories">Categories</Link>
                 </li>
               </ul>
             </div>

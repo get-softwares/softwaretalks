@@ -130,6 +130,7 @@ function ncard(val) {
   );
 }
 
+// Categories Data starts
 function Softwares() {
   let mylocate = useLocation()
   function nccard(val) {
@@ -173,11 +174,131 @@ function Softwares() {
       </Route>
     )
   }
+  // Categories Data Ends
+  
+  // Windows softwares Starts
+  function softwaremap(val) {
+    if (val.Windows === "Windows") {
+      return (
+        <li>
+          <Link to={val.To} className="list-group-item list-group-item-action">
+            <img src={val.img} alt={val.Name} />
+            <br />
+            {val.Name}
+          </Link>
+        </li>
+      );
+    }
+  }
+
+  function Softwaress() {
+    return (
+      <>
+        <Helmet><title>Windows Softwares - SoftwareMess</title><meta name="description" content="Discover and Download best, FREE Software and Apps - SoftwareMess" /></Helmet>
+        <div>
+          <div className="cat">
+            <div className="mb-5">
+              <div className="list-group mt-3">
+                <button className="btn btn-success d-block p-2">
+                  Windows Softwares
+                </button>
+                <div className="card card-body">
+                  <div className="list-group folder-group">
+                    <div className="row no_ls">{Data.map(softwaremap)}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
+  // Windows softwares Ends
+
+  // Apps start
+  function applicationmap(val) {
+    if (val.Apps === "Apps") {
+      return (
+        <li>
+          <Link to={val.To} className="list-group-item list-group-item-action">
+            <img src={val.img} alt={val.Name} />
+            <br />
+            {val.Name}
+          </Link>
+        </li>
+      );
+    }
+  }
+
+  function Application() {
+    return (
+      <>
+        <Helmet><title>Applications - SoftwareMess</title><meta name="description" content="Android apps and games download, download android apps and games for free - SoftwareMess" /></Helmet>
+        <div>
+          <div className="cat">
+            <div className="mb-5">
+              <div className="list-group mt-3">
+                <button className="btn btn-success d-block p-2">Application</button>
+                <div className="card card-body">
+                  <div className="list-group folder-group">
+                    <div className="row no_ls">{Data.map(applicationmap)}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
+  // Apps ends
+
+  // Category starts
+  function categoriesdata(val) {
+    return (
+      <li>
+        <Link to={val.To} className="list-group-item list-group-item-action">
+          <img src={val.img} alt={val.Name} />
+          <br />
+          {val.Name}
+        </Link>
+      </li>
+    );
+  }
+  
+  function Category() {
+    return (
+      <>
+        <Helmet><title>Categories - SoftwareMess</title><meta name="description" content="Get Many softwares by its categories - SoftwareMess" /></Helmet>
+        <div>
+          <div className="cat">
+            <div className="mb-5">
+              <div className="list-group mt-3">
+                <button className="btn btn-success d-block p-2">
+                  Categories
+                </button>
+                <div className="card card-body">
+                  <div className="list-group folder-group">
+                    <div className="row no_ls">{Categories.map(categoriesdata)}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
+  // Category ends
   return (
     <>
       <Switch>
         {Data.map(ncard)}
         {Categories.map(cate)}
+        <Route path="/windows-softwares" component={Softwaress} />
+        <Route path="/apps" component={Application} />
+        <Route path="/categories" component={Category} />
         <>
           <Helmet><title>404 Page Not Found</title></Helmet>
           <Route component={FourHundFour}></Route>
